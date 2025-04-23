@@ -104,7 +104,7 @@ let up = `
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴀᴋᴀ-ᴍᴅ⁴³²
 *•────────────•⟢*
 `;
-conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/JrdxHSY/3439.jpg` }, caption: up })
+conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/RkrM4XdG/941.jpg` }, caption: up })
 
 }
 })
