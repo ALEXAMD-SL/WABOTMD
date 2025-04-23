@@ -190,7 +190,7 @@ cmd({
           body: `${pushname}`,
           mediaType: 1,
           sourceUrl: "https://github.com/Malaka-KG/MALAKA-MD-V1",
-          thumbnailUrl: "https://i.ibb.co/JrdxHSY/3439.jpg",
+          thumbnailUrl: "https://i.ibb.co/RkrM4XdG/941.jpg",
           renderLargerThumbnail: true,
           showAdAttribution: true
         }
@@ -554,7 +554,7 @@ cmd({
                 body: `${pushname}`,
                 mediaType: 1,
                 sourceUrl: "https://github.com/Malaka-KG/MALAKA-MD-V1",
-                thumbnailUrl: "https://i.ibb.co/JrdxHSY/3439.jpg",
+                thumbnailUrl: "https://i.ibb.co/RkrM4XdG/941.jpg",
                 renderLargerThumbnail: true,
                 showAdAttribution: true
               }
@@ -642,7 +642,7 @@ https://chat.whatsapp.com/LqwlyO7VyYD8hAXLQ4GAvI
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
-            image: { url: `https://i.ibb.co/JrdxHSY/3439.jpg` },  // Image URL
+            image: { url: `https://i.ibb.co/RkrM4XdG/941.jpg` },  // Image URL
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
