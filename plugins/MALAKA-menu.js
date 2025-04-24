@@ -179,7 +179,7 @@ cmd({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363382823666763@newsletter',
-          newsletterName: "ᴍᴀʟᴀᴋᴀ-ᴍᴅ",
+          newsletterName: "ᴍᴀᴅᴜꜱᴀɴᴋᴀ ᴍᴅ",
           serverMessageId: 999
         },
         externalAdReply: { 
@@ -665,54 +665,6 @@ cmd(
 );
 
 cmd({
-    pattern: "ping",
-    alias: "speed",
-    desc: "Check bot's response time.",
-    category: "main",
-    react: "🚀",
-    filename: __filename
-},
-async (conn, mek, m, { from, quoted, reply }) => {
-    try {
-        const startTime = Date.now();
-
-        // Add a short delay
-        await new Promise(resolve => setTimeout(resolve, 100)); // 100ms delay
-
-        const endTime = Date.now();
-        const ping = endTime - startTime;
-
-        // Send the ping result
-        await conn.sendMessage(from, { 
-            'text': "*ᴍᴀʟᴀᴋᴀ-ᴍᴅ 𝗧𝗶𝗺𝗲 : " + ping + "ms*",
-      'contextInfo': {
-        'mentionedJid': ["94704243771@s.whatsapp.net"],
-        'groupMentions': [],
-        'forwardingScore': 1,
-        'isForwarded': true,
-        'forwardedNewsletterMessageInfo': {
-          'newsletterJid': "120363382823666763@newsletter",
-          'newsletterName': "ᴍᴀʟᴀᴋᴀ-ᴍᴅ",
-          'serverMessageId': 999
-        },
-        'externalAdReply': {
-          'title': "MALAKA-MD",
-          'body': "ᴍᴀʟᴀᴋᴀ",
-          'mediaType': 1,
-          'sourceUrl': "https://github.com/Malaka-KG/MALAKA-MD-V1",
-          'thumbnailUrl': "https://i.ibb.co/JrdxHSY/3439.jpg",
-          'renderLargerThumbnail': false,
-          'showAdAttribution': true
-                }
-            }
-        }, { quoted: mek });
-    } catch (e) {
-        console.error(e);
-        reply(`An error occurred: ${e.message}`);
-    }
-})
-
-cmd({
     pattern: "settings",
     alias: ["setting"],
     desc: "settings the bot",
@@ -1131,73 +1083,4 @@ async (conn, mek, m, { from, q, reply, isOwner }) => {
         console.error('Error updating environment variable:' + err.message);
         reply("🙇‍♂️ *Failed to update the environment variable. Please try again.*" + err);
     }
-});
-
-cmd({
-  'pattern': 'repo',
-  alias: ["sc"],
-  'desc': "about",
-  'react': '❕',
-  'filename': __filename
-}, async (message, match, msgInfo, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-  try {
-    await message.sendMessage(from, {
-      'image': {
-        'url': 'https://i.ibb.co/JrdxHSY/3439.jpg'
-      },
-      'caption': `
-*───────────╶╶╶╾⦁⦂⦁*
-*◈ COMING SOON____✅*
-*───────────╶╶╶╾⦁⦂⦁*
-
-🧑‍💻 *[ MALAK MD CHANEL ]*
-*╭─────────────●●►*
-*┃▸╭─────────────·๏*
-*┃▸┃ ◈ https://whatsapp.com/channel/0029Vb0ux6E5Ui2VPhL49N2e*
-*┃▸└────────────┈⊷*
-*╰━━━━━━━━━━━━━━━⪼*
-
-👨‍👦‍👦 *[ WHATSAPP GROUP ]* 
-*╭─────────────●●►*
-*┃▸╭─────────────·๏*
-*┃▸┃ ◈ https://chat.whatsapp.com/LqwlyO7VyYD8hAXLQ4GAvI*
-*┃▸└────────────┈⊷*
-*╰━━━━━━━━━━━━━━━⪼*
-
-🤖 *[ MALAKA MD REPO ]* 
-*╭─────────────●●►*
-*┃▸╭─────────────·๏*
-*┃▸┃ ◈ https://github.com/Malaka-KG/MALAKA-MD-V1*
-*┃▸└────────────┈⊷*
-*╰━━━━━━━━━━━━━━━⪼*
-
-> *© ᴘᴏᴡᴇʀᴅᴇ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ* 👩‍💻
-`,
-      'contextInfo': {
-        'mentionedJid': ["94704243771@s.whatsapp.net"],
-        'groupMentions': [],
-        'forwardingScore': 1,
-        'isForwarded': true,
-        'forwardedNewsletterMessageInfo': {
-          'newsletterJid': "120363382823666763@newsletter",
-          'newsletterName': "ᴍᴀʟᴀᴋᴀ-ᴍᴅ",
-          'serverMessageId': 999
-        },
-        'externalAdReply': {
-          'title': "MALAKA-MD",
-          'body': "ᴍᴀʟᴀᴋᴀ",
-          'mediaType': 1,
-          'sourceUrl': "https://github.com/Malaka-KG/MALAKA-MD-V1",
-          'thumbnailUrl': "https://i.ibb.co/JrdxHSY/3439.jpg",
-          'renderLargerThumbnail': false,
-          'showAdAttribution': true
-        }
-      }
-    }, {
-      'quoted': match
-    });
-  } catch (error) {
-    console.log(error);
-    reply('' + error);
-  }
 });
