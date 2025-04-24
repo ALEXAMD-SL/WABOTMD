@@ -207,7 +207,7 @@ cmd({
            `🔽 *Choose the quality:*\n` +
            `1 *SD Video* 📹\n` +
            `2 *HD Video* 🎥\n\n` +
-           `${config.FOOTER || "> 💀ᴍᴀᴅᴜꜱᴀɴᴋᴀ ᴍᴅ🪄🖇️"}`;
+           `${config.FOOTER || "> 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃"}`;
 
         const sentMsg = await conn.sendMessage(from, { image: { url: cover }, caption: info }, { quoted: mek });
         const messageID = sentMsg.key.id;
