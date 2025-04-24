@@ -163,10 +163,8 @@ cmd({
 │ _2_ *ᴏᴡɴᴇʀ menu*
 │ _3_ *ɢʀᴏᴜᴘ ᴍᴇɴᴜ*
 │ _4_ *ᴄᴏɴᴠᴇʀᴛ menu*
-│ _5_ *ᴀɪ ᴍᴇɴᴜ*
 │ _6_ *ᴍᴏᴠɪᴇ menu*
 │ _7_ *ꜱᴇᴀʀᴄʜ menu*
-│ _8_ *ɴᴇᴡꜱ menu*
 ╰═════════════════●●►
 *🌸 Reply the Number you want to select*
 
@@ -574,37 +572,6 @@ cmd({
   }
 });
 
-cmd({
-    pattern: "system",
-    alias: ["status","botinfo"],
-    desc: "Check up time , ram usage and more",
-    category: "main",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-let status = `
-───────────────────
-> 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃
-───────────────────
-
-┌────────────────
-│❖ *Uptime:*  ${runtime(process.uptime())}
-│❖ *Ram usage:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-│❖ *HostName:* ${os.hostname()}
-│❖ *Owner:* 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳
-└────────────────
-
-> 𝙼𝙰𝙻𝙰𝙺𝙰-𝙼𝙳 𝚅1  
-`
-return reply(`${status}`)
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-
-}
-})
 
 cmd({
     pattern: "alive",
@@ -618,27 +585,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         // Generate system status message
         const status = `
-╭━━〔 *MALAKA-MD* 〕━━┈⊷
-│▸ *👋 Hello ${pushname} I'm alive now*
-│*😉🇱🇰 I'm 𝗜 MALAKA-MD Whatsapp Bot* ✓
-│───────────┈⊷
-│▸ ● ᴠᴇʀᴛɪᴏɴ  : ᴠ0.1 🚀
-│▸ ● ᴄᴏᴍᴍᴀɴᴅ : 100+ ✅
-│▸ ● ᴅᴇᴠᴀʟᴏᴘ  : ᴍᴀʟᴀᴋᴀ-ᴍᴅ 👨‍💻
-│▸───────────┈⊷
-│▸> * *ʙᴏᴛ ɢɪᴛʜᴜʙ 👨‍💻*
-https://github.com/Malaka-KG/MALAKA-MD-V1
-│───────────┈⊷
-│▸> * *ᴊᴏɪɴ ᴡʜᴀᴛꜱᴀᴘᴘ ɢʀᴏᴜᴘ 👇*
-https://chat.whatsapp.com/LqwlyO7VyYD8hAXLQ4GAvI
-│───────────┈⊷
-│* *ʙᴏᴛ ᴏᴡɴᴇʀ 👩‍💻*
-+94704243771
-│───────────┈⊷
-││▸ *🪀 MALAKA-MD WHATSAPP BOT
-│───────────┈⊷
-╰──────────────┈⊷
-> 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃`;
+🤤`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
