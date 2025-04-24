@@ -679,7 +679,7 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
     try {
         let desc = `
 ╭────────────────···▸
-│▸⚙MALAKA-MD SETTINGS⚙
+│▸⚙𝗠𝗔𝗗𝗨𝗦𝗔𝗡𝗞𝗔 𝗠𝗗 SETTINGS⚙
 ╰────────────────···▸
 │▸ WORK MODE 
 │▸ ┣ 1.1  Public Work🌍
@@ -747,17 +747,9 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
 │▸ ┣ 16.1  allways offline ON 📲
 │▸ ┗ 16.2  allways offline OFF 📴
 │▸
-│▸ ANTI_DELETE 
-│▸ ┣ 17.1  anti delete ON 📲
-│▸ ┗ 17.2  anti delete OFF 📴
-│▸
 │▸ AUTO_TYPING 
 │▸ ┣ 18.1  auto typing ON 📲
 │▸ ┗ 18.2  auto typing OFF 📴
-│▸
-│▸ AI_CHAT 
-│▸ ┣ 19.1  ai chat ON 📲
-│▸ ┗ 19.2  ai chat OFF 📴
 │▸
 │▸ AUTO_BLOCK 
 │▸ ┣ 20.1  auto block ON 📲
@@ -771,18 +763,14 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
 │▸ ┣ 22.1  react_status ON 📲
 │▸ ┗ 22.2  react_status OFF 📴
 │▸
-│▸ ANTI_CALL 
-│▸ ┣ 23.1  anti call ON 📲
-│▸ ┗ 23.2  anti call OFF 📴
-│▸
 │▸ FAKE_RECORDING 
 │▸ ┣ 24.1  fake recorbing ON 📲
 │▸ ┗ 24.2  fake recorbing OFF 📴
 │▸
 └────────────────···▸
-> *© ᴍᴀʟᴀᴋᴀ-ᴍᴅ ...👨‍💻*`;
+> 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃`;
 
-        const vv = await conn.sendMessage(from, { image: { url: "https://i.ibb.co/JrdxHSY/3439.jpg"}, caption: desc }, { quoted: mek });
+        const vv = await conn.sendMessage(from, { image: { url: "https://i.ibb.co/RkrM4XdG/941.jpg"}, caption: desc }, { quoted: mek });
 
         conn.ev.on('messages.upsert', async (msgUpdate) => {
             const msg = msgUpdate.messages[0];
