@@ -16,7 +16,7 @@ function replaceYouTubeID(url) {
 }
 
 cmd({
-    pattern: "song8",
+    pattern: "song",
     alias: ["ytmp3", "ytmp3dl"],
     react: "🎵",
     desc: "Download Ytmp3",
@@ -48,9 +48,9 @@ cmd({
             `👤 *Author:* ${author?.name || "Unknown"}\n` +
             `🖇 *Url:* ${url || "Unknown"}\n\n` +
             `🔽 *Reply with your choice:*\n` +
-            `1️⃣.1️⃣ *Audio Type* 🎵\n` +
-            `1️⃣.2️⃣ *Document Type* 📁\n\n` +
-            `${config.FOOTER || "POWERED BY YOUR BOT NAME"}`;
+            `1.1 *Audio Type* 🎵\n` +
+            `1.2 *Document Type* 📁\n\n` +
+            `${config.FOOTER || "> 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃"}`;
 
         const sentMsg = await conn.sendMessage(from, { image: { url: image }, caption: info }, { quoted: mek });
         const messageID = sentMsg.key.id;
