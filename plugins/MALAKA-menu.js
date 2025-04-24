@@ -152,20 +152,20 @@ cmd({
     // Menu Text
     const menuText = `
 ╭═════════════════●●►
-│ *Creator* : 💀ᴍᴀᴅᴜꜱᴀɴᴋᴀ ᴍᴅ🪄🖇️
-│ *Version* : v8.1
-│ *Uptime*  : ${runtime(process.uptime())}
-│ *RAM Usage* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB
+│ *Creator* : ⚙️𝗠𝗔𝗗𝗨𝗦𝗔𝗡𝗞𝗔  𝗠𝗗🪄
+│ *Version* : v0.1
+│ *Uptime*  : 17 seconds
+│ *RAM Usage* : 50.22MB
 ╰═════════════════●●►
 │🪀 *LIST MENU*
 │   ───────
-│ _1_ *ᴅᴏᴡɴʟᴏᴀᴅ menu*
-│ _2_ *ᴏᴡɴᴇʀ menu*
-│ _3_ *ɢʀᴏᴜᴘ ᴍᴇɴᴜ*
-│ _4_ *ᴄᴏɴᴠᴇʀᴛ menu*
-│ _5_ *ꜱᴇᴀʀᴄʜ menu*
+│ _1_ *📍ᴅᴏᴡɴʟᴏᴀᴅ menu*
+│ _2_ *📍ᴏᴡɴᴇʀ menu*
+│ _3_ *📍ɢʀᴏᴜᴘ ᴍᴇɴᴜ*
+│ _4_ *📍ᴄᴏɴᴠᴇʀᴛ menu*
+│ _5_ *📍ꜱᴇᴀʀᴄʜ menu*
 ╰═════════════════●●►
-*🌸 Reply the Number you want to select*
+*🙊🖤 Reply the Number you want to select*
 
 > 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃`;
 
