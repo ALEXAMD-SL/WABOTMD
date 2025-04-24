@@ -56,7 +56,7 @@ const {readEnv} = require('./lib/database')
 const config = await readEnv();
 //==============================================
     
-console.log("CONNECTING MALAKA-MD-V1 BOT💮...");
+console.log("CONNECTING MADUSANKA-MD BOT💮...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/lib/session/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -84,25 +84,31 @@ require("./plugins/" + plugin);
 }
 });
 console.log('PLUGINS FILES INSTALL SUCCESSFULLY ✅')
-console.log('MALAKA-MD-V1 CONNECTED TO WHATSAPP ENJOY ✅')
+console.log('MADUSANKA-MD CONNECTED TO WHATSAPP ENJOY ✅')
 
 let up = `
-*[ •  MALAKA-MD-V1 • ]*
+*[ •  MADUSANKA-MD-V1 • ]*
 *╭┈───────────────•*
-*│ ◦*🧑‍💻 *[ MALAK MD CHANEL ]*
-*│ ◈ https://whatsapp.com/channel/0029Vb0ux6E5Ui2VPhL49N2e*
-*│  
+*│ ◦*🧑‍💻 *[ MADUSANKA MD CHANEL ]*
+*│ ◈ https://whatsapp.com/channel/0029Vb68p7ZCcW4wbGqqBp0R*
+*│*
 *│  ◦*👨‍👦‍👦 *[ WHATSAPP GROUP ]* 
-*│ ◈ https://chat.whatsapp.com/LqwlyO7VyYD8hAXLQ4GAvI*
-*│
-*│  ◦*🤖 *[ MALAKA MD REPO ]* 
-*│ ◈ https://github.com/Malaka-KG/MALAKA-MD-V1*
-*│
+*│ ◈ https://chat.whatsapp.com/H2zKVvtWUQh07i2SkDjfEj*
+*│*
+*│ මිනිස්සු එක්ක තරහ වෙන්න එපා* 
+*තේරුම් අරන් පැත්තකට වෙන්න ! 🖤*
+*│*
+*│*
 *╰┈───────────────•*
-*♥️*\n\n*PREFIX: [${prefix}]*
+*🥺❤️*
+
+*PREFIX: [.]*
 *•────────────•⟢*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴀᴋᴀ-ᴍᴅ⁴³²
+> © 🧟‍♀️ᴘᴏᴡᴇʀᴅ ʙʏ ᴍᴀʟᴀᴋᴀ ᴍᴅ / ꜱᴜʀᴀᴛʜ ᴍᴅ🍃
 *•────────────•⟢*
+
+
+> ⚙️𝗠𝗔𝗗𝗨𝗦𝗔𝗡𝗞𝗔  𝗠𝗗🪄
 `;
 conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/RkrM4XdG/941.jpg` }, caption: up })
 
@@ -690,7 +696,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("HEY, MALAKA-MD-V1 STARTED ✅");
+res.send("HEY, MADUSANKA-MD STARTED ✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
