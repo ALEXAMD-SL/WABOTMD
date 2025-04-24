@@ -1,4 +1,4 @@
-const { fetchJson } = require('../functions')
+const { fetchJson } = require('../lib/functions')
 const getFBInfo = require("@xaviabot/fb-downloader");
 const cheerio = require('cheerio')
 const { igdl } = require('ruhend-scraper')
