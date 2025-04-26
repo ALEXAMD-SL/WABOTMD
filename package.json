@@ -34,6 +34,7 @@
     "cheerio":"1.0.0-rc.12",
     "file-type":"16.5.3",
     "@dark-yasiya/yt-dl.js": "latest",
+    "@dark-yasiya/scrap":"latest",
     "@xaviabot/fb-downloader":"latest",
     "@mrnima/tiktok-downloader":"1.0.0",
     "@mrnima/facebook-downloader":"1.0.0",
