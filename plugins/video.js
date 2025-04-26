@@ -1,4 +1,4 @@
-const { cmd } = require("../lib/command");
+const { cmd } = require("../command");
 const { ytsearch } = require("@dark-yasiya/yt-dl.js");
 
 const commandmp4 = {
